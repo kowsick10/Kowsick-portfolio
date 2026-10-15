@@ -61,7 +61,7 @@ export const about = {
 
 export const experience = [
   {
-    role: 'Java Developer',
+    role: 'Associate Software Developer',
     company: 'Nexzware Technology',
     period: 'Sep 2026 – Present',
     place: 'Chennai · On-site',
