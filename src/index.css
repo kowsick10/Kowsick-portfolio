@@ -458,6 +458,41 @@ button.chip:focus-visible {
     var(--rb-gradient) border-box;
   color: rgb(var(--fg));
 }
+.skill-badge {
+  gap: 8px;
+  padding-inline: 12px;
+  white-space: nowrap;
+  transition: transform 250ms ease, border-color 250ms ease, box-shadow 250ms ease, color 200ms ease;
+}
+.skill-badge__icon {
+  width: 19px;
+  height: 19px;
+  flex: none;
+  transition: transform 250ms ease;
+}
+.dark .skill-badge__icon--adaptive { color: var(--dark-icon-color) !important; }
+.skill-badge:hover,
+.skill-badge:focus-visible {
+  transform: translateY(-2px);
+  border-color: transparent;
+  background:
+    linear-gradient(rgb(var(--card)), rgb(var(--card))) padding-box,
+    linear-gradient(rgb(var(--skill-color)), rgb(var(--skill-color))) border-box;
+  box-shadow: 0 0 14px rgb(var(--skill-color) / 0.18);
+}
+.skill-badge:hover .skill-badge__icon,
+.skill-badge:focus-visible .skill-badge__icon { transform: scale(1.08); }
+.skill-badge:focus-visible { outline: 2px solid rgb(var(--skill-color) / 0.65); outline-offset: 2px; }
+
+@media (max-width: 640px) {
+  .skill-badge__icon { width: 17px; height: 17px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .skill-badge:hover,
+  .skill-badge:focus-visible { transform: none; }
+  .skill-badge:hover .skill-badge__icon,
+  .skill-badge:focus-visible .skill-badge__icon { transform: none; }
+}
 
 .btn-ghost,
 .icon-btn,
