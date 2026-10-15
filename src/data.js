@@ -41,13 +41,13 @@ export const nav = [
 
 export const about = {
   bio: [
-    'I am a Computer Science student at Chennai Institute of Technology who enjoys turning ideas into working products. I build full-stack web and mobile apps with Java, Spring Boot, React, Flutter and React Native, and I work with LLMs to make software that understands people.',
+    'I am a Computer Science graduate of Chennai Institute of Technology who enjoys turning ideas into working products. I build full-stack web and mobile apps with Java, Spring Boot, React, Flutter and React Native, and I work with LLMs to make software that understands people.',
     'My research on secure, explainable credit scoring with federated learning was accepted at an IEEE-sponsored conference. Outside class I solve algorithm problems, compete in CTFs and help run campus tech events.',
   ],
   education: {
     school: 'Chennai Institute of Technology',
     degree: 'B.E. Computer Science and Engineering',
-    period: '2022 – Present',
+    period: '2022 – 2026',
     score: 'CGPA 8.51 / 10',
   },
   stats: [
