@@ -29,18 +29,3 @@ The site will be available at `https://kowsick10.github.io/Kowsick-portfolio/`. 
 
 ## Deploy to Vercel
 Use the Vite framework preset, `npm run build` as the build command, and `dist` as the output directory. Leave `VITE_BASE_PATH` unset so the site and its assets use the root path on the Vercel domain.
-
-## Design credit
-The interactive 3D skills keyboard is an original adaptation inspired by
-[Naresh Khatri's 3D portfolio](https://github.com/Naresh-Khatri/3d-portfolio).
-
-## Swap in your own content
-| What | Where |
-|---|---|
-| Portrait | `/public/images/1000012069.jpg`, referenced as `'/images/1000012069.jpg'` by `profile.photo` in `src/data.js` |
-| Resume | replace `/public/resume.pdf` |
-| Project GitHub/live links | `projects[]` in `src/data.js` (search "TODO") |
-| IEEE paper link | `publication.url` |
-| CodeChef/SkillRack URLs | `competitive[]` |
-| Domain | replace `kowsick.vercel.app` in `index.html`, `public/robots.txt`, `public/sitemap.xml` |
-| Social preview | replace `/public/og-image.png` (1200x630) |
